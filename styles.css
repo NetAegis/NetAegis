@@ -1,0 +1,104 @@
+/* Animação de mudança de cor */
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Animação de brilho */
+@keyframes glowEffect {
+    0% {
+        filter: brightness(1) hue-rotate(0deg);
+    }
+    50% {
+        filter: brightness(1.5) hue-rotate(180deg);
+    }
+    100% {
+        filter: brightness(1) hue-rotate(360deg);
+    }
+}
+
+/* Estilos padrão para desktop */
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('cyberPC.png'); /* Certifique-se de que o caminho está correto */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+    position: relative;
+    animation: glowEffect 10s infinite linear; /* Animação de brilho */
+    font-family: 'Times New Roman', serif;
+    color: #000; /* Cor do texto preta */
+}
+
+/* Estilos para header e footer */
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tamanho do título */
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Estilo da caixa de conteúdo */
+.caixa {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsivo para tablets (telas de largura entre 768px e 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .caixa {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+/* Responsivo para celulares (telas de largura até 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 5px;
+        background-size: contain; /* Ajusta a imagem para não cortar */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .caixa {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+/* Camada translúcida */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.2); /* Cor ciano translúcida */
+    mix-blend-mode: overlay; /* Mistura com a imagem de fundo */
+    animation: colorChange 10s infinite linear; /* Animação de mudança de cor */
+}
