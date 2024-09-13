@@ -39,16 +39,27 @@ body {
     color: #000; /* Cor do texto preta */
 }
 
+/* Estilo para o título "NetAegis" */
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #00ff00; /* Cor verde para o título */
+    text-shadow: 2px 2px 4px #000000; /* Contorno preto no texto */
+}
+
 /* Estilos para header e footer */
 header, footer {
     text-align: center;
     padding: 20px;
 }
 
-/* Tamanho do título */
-h1 {
-    font-size: 3rem;
-    margin: 0;
+/* Estilos para o rodapé (direitos autorais) */
+footer p {
+    font-size: 1rem;
+    color: #00ff00; /* Cor verde para os direitos autorais */
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000; /* Contorno preto no texto */
 }
 
 /* Estilo da caixa de conteúdo */
