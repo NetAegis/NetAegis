@@ -102,3 +102,45 @@ h1 {
     mix-blend-mode: overlay; /* Mistura com a imagem de fundo */
     animation: colorChange 10s infinite linear; /* Animação de mudança de cor */
 }
+
+/* Estilo para o botão de e-mail */
+.email-button {
+    position: fixed;
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância da direita da página */
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1000;
+    color: #fff;
+}
+
+.email-button:hover {
+    background-color: #555;
+}
+
+.email-button i {
+    font-size: 24px;
+}
+
+/* Estilo para o botão de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    top: 80px; /* Botão WhatsApp fica abaixo do e-mail */
+    right: 20px;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1000;
+    color: #fff;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-button i {
+    font-size: 24px;
+}
