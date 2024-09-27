@@ -72,33 +72,55 @@ footer p {
     text-align: center;
 }
 
-/* Responsivo para tablets (telas de largura entre 768px e 1024px) */
-@media screen and (max-width: 1024px) {
-    h1 {
-        font-size: 2.5rem;
+/* Responsivo para smartphones (0-599 dp) */
+@media screen and (max-width: 599px) {
+    body {
+        margin: 16px; /* Margem para smartphones */
     }
-
     .caixa {
-        width: 80%;
-        padding: 15px;
+        width: calc(100% - 32px); /* 100% - margem total */
     }
 }
 
-/* Responsivo para celulares (telas de largura até 767px) */
-@media screen and (max-width: 767px) {
+/* Responsivo para tablets (600 - 904 dp) */
+@media screen and (min-width: 600px) and (max-width: 904px) {
     body {
-        padding: 5px;
-        background-size: contain; /* Ajusta a imagem para não cortar */
+        margin: 32px; /* Margem para tablets */
     }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
     .caixa {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
+        width: calc(100% - 64px); /* 100% - margem total */
+    }
+}
+
+/* Responsivo para tablets 2 (905 - 1239 dp) */
+@media screen and (min-width: 905px) and (max-width: 1239px) {
+    body {
+        margin: 0 auto; /* Margem centralizada */
+        width: 840px; /* Corpo definido para 840 dp */
+    }
+    .caixa {
+        width: calc(100% - 64px); /* 100% - margem total */
+    }
+}
+
+/* Responsivo para laptops (1240 - 1439 dp) */
+@media screen and (min-width: 1240px) and (max-width: 1439px) {
+    body {
+        margin: 200px; /* Margem para laptops */
+    }
+    .caixa {
+        width: calc(100% - 400px); /* 100% - margem total */
+    }
+}
+
+/* Responsivo para desktops (1440+ dp) */
+@media screen and (min-width: 1440px) {
+    body {
+        margin: 0 auto; /* Margem centralizada */
+        width: 1040px; /* Corpo definido para desktop */
+    }
+    .caixa {
+        width: calc(100% - 400px); /* 100% - margem total */
     }
 }
 
