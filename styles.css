@@ -1,3 +1,10 @@
+/* Garante que todos os elementos respeitem o tamanho definido */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Animação de mudança de cor */
 @keyframes colorChange {
     0% {
