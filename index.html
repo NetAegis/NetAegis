@@ -1,50 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Desenvolvedor Web">
-    <meta name="keywords" content="Desenvolvimento Web, Frontend, Backend, HTML, CSS">
-    <meta name="author" content="NetAegis">
-    <title>NetAegis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armarinhos Coelho</title>
+  <link rel="stylesheet" href="estiloCoelho.css">
 </head>
 <body>
-    <!-- Botão de e-mail no canto superior direito -->
-    <a href="mailto:astrid.whitehair@gmail.com" class="email-button">
-        <i class="fas fa-envelope"></i>
-    </a>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpeg" alt="Logo Armarinhos Coelho">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre-nos">Sobre Nós</a></li>
+        <li><a href="#onde-ficamos">Onde Ficamos</a></li>
+        <li><a href="#redes-sociais">Redes Sociais</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Principal -->
+  <section class="banner">
+    <h1>Bem-vindo à Armarinhos Coelho</h1>
+    <p>Tudo para você e sua casa!</p>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre-nos" class="sobre-nos">
+    <h2>Sobre Nós</h2>
     
-    <!-- Botão de WhatsApp abaixo do botão de e-mail -->
-    <a href="https://wa.me/5542998404477" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- História -->
+    <h3>História</h3>
+    <p>A Armarinhos Coelho iniciou suas atividades em dezembro de 1993, com uma pequena loja na Rua General Carneiro. Em junho de 1999, mudamos para nossa sede própria, localizada na Rua Fernandes Pinheiro, nº 106.</p>
+    <p>Inicialmente, trabalhávamos com vendas no atacado, atendendo pequenos mercados e mercearias tanto na cidade de Ponta Grossa quanto em outras cidades do Paraná. Com o aumento da concorrência e a inadimplência de nossos clientes, surgiu a necessidade de focar em vendas no varejo, as quais são recebidas à vista, eliminando a espera por cheques ou boletos.</p>
     
-    <div class="overlay"></div> 
-    <header>
-        <h1>NetAegis</h1>
-    </header>
+    <!-- Foto da Loja -->
+    <div class="foto-loja">
+      <h3>Nosso Espaço</h3>
+      <img src="fotoLoja.jpeg" alt="Foto da loja Armarinhos Coelho">
+      <p>Foto da fachada de nossa loja na Rua Fernandes Pinheiro, nº 106, Ponta Grossa – PR.</p>
+    </div>
+    
+    <!-- Valores -->
+    <h3>Valores</h3>
+    <p>Um dos principais valores da Armarinhos Coelho é a honestidade. Não vendemos apenas visando lucro, mas também buscamos orientar nossos clientes para que adquiram o produto certo, com base nos benefícios e aplicações que ele pode oferecer.</p>
+    <p>Além disso, destacamos a confiança que transmitimos às pessoas, garantindo que nossos produtos atendam às suas necessidades e satisfaçam plenamente. Valorizamos também o trabalho em equipe e um ambiente harmonioso, saudável e acolhedor, que resulta em um excelente atendimento ao cliente.</p>
+  
+    <!-- Diferenciais -->
+    <h3>Diferenciais</h3>
+    <p>O que nos diferencia das outras lojas é o atendimento personalizado, focado em entender e atender a necessidade de cada cliente. Outro grande diferencial é a vasta quantidade de itens disponíveis, proporcionando melhores opções de escolha.</p>
+    <p>Oferecemos produtos que muitas vezes não são encontrados em outras lojas de armarinhos, como tecidos para cortinas, materiais para confecção de vestuário de inverno, passadeiras de borracha, plásticos de mesa, varões para cortinas e outros artigos específicos.</p>
+  </section>
 
-    <!-- Seção principal -->
-    <section class="caixa">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web dedicado a criar soluções inovadoras e funcionais. Neste portfólio, você encontrará uma visão geral das minhas habilidades técnicas e meu compromisso com a excelência no desenvolvimento web.</p>
-    </section>
+  <!-- Onde Ficamos -->
+  <section id="onde-ficamos" class="onde-ficamos">
+    <h2>Onde Ficamos</h2>
+    <p>Visite-nos no centro de Ponta Grossa – PR.</p>
+    <!-- Mapa interativo do Google Maps -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.527198142728!2d-50.16305728504879!3d-25.095815183939874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94efd4e70466e2cf%3A0x5d20d324168b24ed!2sArmarinhos%20Coelho!5e0!3m2!1spt-BR!2sbr!4v1699375130619!5m2!1spt-BR!2sbr" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p>
+      <a href="https://maps.app.goo.gl/WcVYeKJjxgFC153CA" target="_blank" class="botao">Abrir no Google Maps</a>
+    </p>
+  </section>
 
-    <!-- Seção de Habilidades -->
-     <section class="caixa">
-        <h2>Minhas habilidades</h2>
-        <ul class="habilidades">
-            <li>Desenvolvimento Front-End: HTML, CSS e Javascript</li>
-            <li>Desenvolvimento Back-end: Python, C++</li>
-            <li>Desenvolvimento Mobile: Figma, Kodular e Database</li>
-        </ul>
-     </section>
+  <!-- Redes Sociais -->
+  <section id="redes-sociais" class="redes-sociais">
+    <h2>Redes Sociais</h2>
+    <p>Fale conosco pelas nossas redes sociais clicando nos botões abaixo:</p>
+    <ul>
+      <li>
+        <a href="https://wa.me/5542991122040" 
+           target="_blank" 
+           class="botao">WhatsApp para compras</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/armarinhoscoelho/" 
+           target="_blank" 
+           class="botao">Instagram da Loja</a>
+      </li>
+    </ul>
+  </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2024 NetAegis. Todos os direitos reservados.</p>
-    </footer>
+ <!-- Feedback -->
+<section id="feedback" class="feedback">
+  <h2>Entre em Contato</h2>
+  <p>Para enviar sua mensagem e dar seu feedback, clique no botão abaixo e fale diretamente conosco pelo WhatsApp:</p>
+  <a href="https://wa.me/5542991122040" 
+     target="_blank" 
+     class="botao">Enviar Mensagem no WhatsApp</a>
+</section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2024 Armarinhos Coelho. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
